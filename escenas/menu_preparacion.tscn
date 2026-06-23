@@ -1,0 +1,103 @@
+[gd_scene format=3 uid="uid://ydcn0q0qsvif"]
+
+[ext_resource type="Script" uid="uid://c76fomfoykfpw" path="res://scripts/ventana_arbol.gd" id="1_e00wo"]
+
+[node name="MenuPreparacion" type="Control" unique_id=2083890603]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="ContenedorPrincipal" type="VBoxContainer" parent="." unique_id=1613073572]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="ZonaSuperior" type="HBoxContainer" parent="ContenedorPrincipal" unique_id=1263520224]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="SeccionTienda" type="VBoxContainer" parent="ContenedorPrincipal/ZonaSuperior" unique_id=1259856404]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="ContenedorPrincipal/ZonaSuperior/SeccionTienda" unique_id=571292123]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "TIENDA DE SOBRES"
+horizontal_alignment = 1
+
+[node name="GridPacks" type="GridContainer" parent="ContenedorPrincipal/ZonaSuperior/SeccionTienda" unique_id=1681000895]
+layout_mode = 2
+columns = 3
+
+[node name="GridOfertas" type="GridContainer" parent="ContenedorPrincipal/ZonaSuperior/SeccionTienda" unique_id=1306463396]
+layout_mode = 2
+columns = 3
+
+[node name="SeccionArbol" type="VBoxContainer" parent="ContenedorPrincipal/ZonaSuperior" unique_id=513783848]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="ContenedorPrincipal/ZonaSuperior/SeccionArbol" unique_id=101908203]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "ÁRBOL DE HABILIDADES"
+horizontal_alignment = 1
+
+[node name="VentanaArbol" type="Control" parent="ContenedorPrincipal/ZonaSuperior/SeccionArbol" unique_id=1276168224]
+clip_contents = true
+layout_mode = 2
+size_flags_vertical = 3
+script = ExtResource("1_e00wo")
+
+[node name="LienzoArbol" type="Control" parent="ContenedorPrincipal/ZonaSuperior/SeccionArbol/VentanaArbol" unique_id=607820517]
+custom_minimum_size = Vector2(2000, 2000)
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_filter = 2
+
+[node name="Button" type="Button" parent="ContenedorPrincipal/ZonaSuperior/SeccionArbol/VentanaArbol/LienzoArbol" unique_id=1056300352]
+layout_mode = 0
+offset_left = 742.0
+offset_top = 164.0
+offset_right = 952.0
+offset_bottom = 212.0
+text = "subir vida de torre a 100%
+"
+
+[node name="Button2" type="Button" parent="ContenedorPrincipal/ZonaSuperior/SeccionArbol/VentanaArbol/LienzoArbol" unique_id=417879874]
+layout_mode = 0
+offset_left = 131.0
+offset_top = 164.0
+offset_right = 284.0
+offset_bottom = 235.0
+text = "subir atq caballero"
+
+[node name="ZonaInferior" type="ColorRect" parent="ContenedorPrincipal" unique_id=1664011397]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+color = Color(0.1489259, 0.17821822, 0.36299238, 1)
+
+[node name="InicioPartida" type="Button" parent="ContenedorPrincipal/ZonaInferior" unique_id=436829426]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -319.0
+offset_top = -15.5
+offset_right = 319.0
+offset_bottom = 15.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Iniciar Partida"

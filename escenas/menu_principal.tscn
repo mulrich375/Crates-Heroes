@@ -1,0 +1,62 @@
+[gd_scene format=3 uid="uid://blp5e6h01kj03"]
+
+[node name="menu_principal" type="Control" unique_id=964828645]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+metadata/_edit_use_anchors_ = true
+
+[node name="Fondo" type="ColorRect" parent="." unique_id=488330978]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.22299486, 0.2250424, 0.27995566, 1)
+
+[node name="Titulo" type="Label" parent="." unique_id=2071729029]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -287.0
+offset_right = 287.0
+offset_bottom = 195.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 50
+text = "Crates Heroes 
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ContenedorBotones" type="VBoxContainer" parent="." unique_id=1829461474]
+layout_mode = 0
+offset_left = 370.0
+offset_top = 346.0
+offset_right = 874.0
+offset_bottom = 687.0
+
+[node name="BotonHistoria" type="Button" parent="ContenedorBotones" unique_id=1281235649]
+layout_mode = 2
+text = "Modo Historia"
+
+[node name="BotonInfinito" type="Button" parent="ContenedorBotones" unique_id=14657169]
+layout_mode = 2
+text = "Modo Infinito"
+
+[node name="BotonTutorial" type="Button" parent="ContenedorBotones" unique_id=698314974]
+layout_mode = 2
+text = "Tutorial"
+
+[node name="BotonConfiguracion" type="Button" parent="ContenedorBotones" unique_id=590143710]
+layout_mode = 2
+text = "Configuración"
+
+[node name="BotonSalir" type="Button" parent="ContenedorBotones" unique_id=345979146]
+layout_mode = 2
+text = "Salir"
